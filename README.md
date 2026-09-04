@@ -20,7 +20,13 @@ Repositorio centralizado de proyectos prácticos de aseguramiento de calidad (QA
 * **Entregables:** Incluye script de pruebas completo, configuración y el informe técnico formal de ejecución (`INFORME_TECNICO_EJECUCION.md`).
 
 ---
-
+Objetivo: Pruebas End-to-End (E2E), auditoría de contenido UI y análisis de tráfico de red en una plataforma de e-commerce real (`practicesoftwaretesting.com`).
+Habilidades demostradas:
+- Diseño de suites de pruebas con Playwright y TypeScript.
+- Uso avanzado de `expect.soft()` para auditorías ininterrumpidas de enlaces (404/500), botones y ortografía.
+- Interceptación de red y validación de respuestas de la API (detección de errores 401 Unauthorized y 503).
+- Generación de reportes ejecutivos de QA orientados a negocio.
+Entregables: Scripts de automatización para búsqueda, login, auditoría de contenido y reporte ejecutivo final de QA.
 ## 🚀 Cómo clonar y ejecutar localmente
 
 1. Clona el repositorio:
