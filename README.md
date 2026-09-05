@@ -1,42 +1,42 @@
 # 🧪 Playwright QA Portfolio — Luis Carlos Mazzanti
 
-Repositorio centralizado de proyectos prácticos de aseguramiento de calidad (QA), automatización End-to-End (E2E) con **Playwright**, diseño de casos de prueba y auditorías técnicas.
+Centralized repository of practical quality assurance (QA) projects, End-to-End (E2E) automation with **Playwright**, test case design, and technical audits.
 
 ---
 
-## 📂 Estructura del Portafolio
+## 📂 Portfolio Structure
 
-### 📁 `prueba1/` — Validación Básica de Formularios
-* **Objetivo:** Automatización de flujos de validación de formularios y aplicación de técnicas de testing formal.
-* **Técnicas aplicadas:** Particiones de equivalencia, análisis de valores frontera y prevención de falsos positivos con casos de contraste.
-* **Tecnologías:** Playwright (TypeScript/JavaScript).
+### 📁 `prueba1/` — Basic Form Validation
+* **Objective:** Automation of form validation flows and application of formal testing techniques.
+* **Applied Techniques:** Equivalence partitioning, boundary value analysis, and prevention of false positives with contrast cases.
+* **Technologies:** Playwright (TypeScript/JavaScript).
 
-### 📁 `prueba2/` — FinanceFlow Pro (Módulo Avanzado)
-* **Objetivo:** Pruebas de regresión, sincronización asíncrona y auditoría lógica de datos en un panel financiero simulado (`dashboard-pro.html`).
-* **Habilidades demostradas:** 
-  * Manejo de esperas inteligentes y estados de carga (latencia de red simulada de ~1.5s).
-  * Prevención de dobles envíos y validación de elementos dinámicos en el DOM.
-  * **Bug Hunting:** Detección, aislamiento y documentación formal del incidente lógico `BUG-FF-001` (desviación de +500€ en métricas acumuladas).
-* **Entregables:** Incluye script de pruebas completo, configuración y el informe técnico formal de ejecución (`INFORME_TECNICO_EJECUCION.md`).
+### 📁 `prueba2/` — FinanceFlow Pro (Advanced Module)
+* **Objective:** Regression testing, asynchronous synchronization, and data logic auditing in a simulated financial panel (`dashboard-pro.html`).
+* **Demonstrated Skills:** 
+  * Handling smart waits and loading states (~1.5s simulated network latency).
+  * Prevention of double submissions and validation of dynamic elements in the DOM.
+  * **Bug Hunting:** Detection, isolation, and formal documentation of the logical incident `BUG-FF-001` (+500€ deviation in accumulated metrics).
+* **Deliverables:** Includes complete test script, configuration, and the formal technical execution report (`INFORME_TECNICO_EJECUCION.md`).
 
 ### 📁 `TestingQASwagLabs/` — Swag Labs (E2E & Bug Regression)
-* **Objetivo:** Transición de QA Manual a Automatización E2E, documentando incidencias reales en Jira y construyendo una suite de regresión sobre SauceDemo.
-* **Habilidades demostradas:**
-  * Reporte de incidencias y clasificación de severidades bajo estándares de la industria.
-  * Automatización de casos de error con Playwright y ejecución utilizando navegadores locales para sortear bloqueos de red.
-  * Uso de aserciones blandas (`expect.soft()`) para validar múltiples condiciones críticas de fallo en un solo flujo.
-* **📋 Matriz de Trazabilidad de Bugs (Jira):**
+* **Objective:** Transition from Manual QA to E2E Automation, documenting real issues in Jira and building a regression suite on SauceDemo.
+* **Demonstrated Skills:**
+  * Bug reporting and severity classification under industry standards.
+  * Automation of error scenarios using Playwright and execution via local browsers to bypass network restrictions.
+  * Utilization of soft assertions (`expect.soft()`) to validate multiple critical failure conditions within a single flow.
+* **📋 Bug Traceability Matrix (Jira):**
 
-| ID del Ticket | Severidad | Módulo / Etiqueta | Descripción del Hallazgo | Script Asociado |
+| Ticket ID | Severity | Module / Tag | Finding Description | Associated Script |
 | :--- | :--- | :--- | :--- | :--- |
-| **BUG-01** | `Severidad-Alta` | `Funcionalidad / Auth` | Bloqueo de sesión y error crítico (*Epic sadface*) con credenciales restringidas. | `swag-login-bug.spec.ts` |
-| **BUG-02** | `Severidad-Media` | `Inventario / Carrito` | Ausencia de selectores de cantidad numéricos directos en la interfaz de productos. | `swag-regression-suite.spec.ts` |
-| **BUG-03** | `Severidad-Alta` | `Checkout` | Incompletitud en el formulario de envío (carencia de campos para país y logística global). | `swag-regression-suite.spec.ts` |
+| **BUG-01** | `High-Severity` | `Functionality / Auth` | Session lockout and critical error (*Epic sadface*) with restricted credentials. | `swag-login-bug.spec.ts` |
+| **BUG-02** | `Medium-Severity` | `Inventory / Cart` | Absence of direct numeric quantity selectors in the product interface. | `swag-regression-suite.spec.ts` |
+| **BUG-03** | `High-Severity` | `Checkout` | Incompleteness in the shipping form (lack of country and global logistics fields). | `swag-regression-suite.spec.ts` |
 
 ---
 
-## 🚀 Cómo clonar y ejecutar localmente
+## 🚀 How to clone and run locally
 
-1. Clona el repositorio:
+1. Clone the repository:
    ```bash
    git clone [https://github.com/LuigiMazza/playwright-qa-portfolio.git](https://github.com/LuigiMazza/playwright-qa-portfolio.git)
