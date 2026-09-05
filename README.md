@@ -19,14 +19,22 @@ Repositorio centralizado de proyectos prácticos de aseguramiento de calidad (QA
   * **Bug Hunting:** Detección, aislamiento y documentación formal del incidente lógico `BUG-FF-001` (desviación de +500€ en métricas acumuladas).
 * **Entregables:** Incluye script de pruebas completo, configuración y el informe técnico formal de ejecución (`INFORME_TECNICO_EJECUCION.md`).
 
+### 📁 `TestingQASwagLabs/` — Swag Labs (E2E & Bug Regression)
+* **Objetivo:** Transición de QA Manual a Automatización E2E, documentando incidencias reales en Jira y construyendo una suite de regresión sobre SauceDemo.
+* **Habilidades demostradas:**
+  * Reporte de incidencias y clasificación de severidades bajo estándares de la industria.
+  * Automatización de casos de error con Playwright y ejecución utilizando navegadores locales para sortear bloqueos de red.
+  * Uso de aserciones blandas (`expect.soft()`) para validar múltiples condiciones críticas de fallo en un solo flujo.
+* **📋 Matriz de Trazabilidad de Bugs (Jira):**
+
+| ID del Ticket | Severidad | Módulo / Etiqueta | Descripción del Hallazgo | Script Asociado |
+| :--- | :--- | :--- | :--- | :--- |
+| **BUG-01** | `Severidad-Alta` | `Funcionalidad / Auth` | Bloqueo de sesión y error crítico (*Epic sadface*) con credenciales restringidas. | `swag-login-bug.spec.ts` |
+| **BUG-02** | `Severidad-Media` | `Inventario / Carrito` | Ausencia de selectores de cantidad numéricos directos en la interfaz de productos. | `swag-regression-suite.spec.ts` |
+| **BUG-03** | `Severidad-Alta` | `Checkout` | Incompletitud en el formulario de envío (carencia de campos para país y logística global). | `swag-regression-suite.spec.ts` |
+
 ---
-Objetivo: Pruebas End-to-End (E2E), auditoría de contenido UI y análisis de tráfico de red en una plataforma de e-commerce real (`practicesoftwaretesting.com`).
-Habilidades demostradas:
-- Diseño de suites de pruebas con Playwright y TypeScript.
-- Uso avanzado de `expect.soft()` para auditorías ininterrumpidas de enlaces (404/500), botones y ortografía.
-- Interceptación de red y validación de respuestas de la API (detección de errores 401 Unauthorized y 503).
-- Generación de reportes ejecutivos de QA orientados a negocio.
-Entregables: Scripts de automatización para búsqueda, login, auditoría de contenido y reporte ejecutivo final de QA.
+
 ## 🚀 Cómo clonar y ejecutar localmente
 
 1. Clona el repositorio:
